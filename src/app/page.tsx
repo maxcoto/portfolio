@@ -20,7 +20,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="text-xl font-bold text-white">
-              Maximiliano Perez Coto
+              Max Coto
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
@@ -37,9 +37,8 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
-              Maximiliano
-              <span className="block bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Perez Coto
+              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Max Coto
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-6">
@@ -91,13 +90,9 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-white mb-12 text-center">About Me</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
+              
               <p className="text-lg text-gray-300 mb-6">
-                Passionate software engineer with over 14 years of experience, with the last 4+ years 
-                dedicated to revolutionizing the DeFi space. My expertise spans smart contract development, 
-                cross-chain protocols, and blockchain security.
-              </p>
-              <p className="text-lg text-gray-300 mb-6">
-                I specialize in building innovative DeFi protocols including vault systems, lending platforms, 
+                Specialized in building innovative DeFi protocols including vault systems, lending platforms, 
                 and AI-powered trading interfaces. My work focuses on creating secure, efficient, and user-friendly 
                 solutions that push the boundaries of decentralized finance.
               </p>
@@ -426,7 +421,7 @@ export default function Home() {
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-white/10">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-400">
-            © 2024 Maximiliano Perez Coto. Building the future of decentralized finance.
+            © 2025 Max Coto. Building the future of decentralized finance.
           </p>
         </div>
       </footer>

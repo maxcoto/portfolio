@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Maximiliano Perez Coto - DeFi Engineer & Smart Contract Developer",
+  title: "Max Coto - DeFi Engineer",
   description: "Smart Contract Engineer with 14+ years of experience, specializing in DeFi protocols, vault systems, and blockchain security. Building the future of decentralized finance.",
 };
 
