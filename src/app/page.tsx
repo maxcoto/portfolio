@@ -36,6 +36,16 @@ export default function Home() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
+            {/* Profile Picture */}
+            <div className="mb-8 flex justify-center">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-purple-400/30 shadow-2xl">
+                <img 
+                  src="/profile.jpeg" 
+                  alt="Max Coto Profile Picture" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Max Coto
