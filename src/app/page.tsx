@@ -15,21 +15,8 @@ import {
 export default function Home() {
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-1 h-1 bg-green-400 rounded-full animate-pulse delay-1000"></div>
-        <div className="absolute bottom-40 left-1/4 w-1.5 h-1.5 bg-purple-400 rounded-full animate-pulse delay-500"></div>
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-yellow-400 rounded-full animate-pulse delay-700"></div>
-        <div className="absolute bottom-20 right-10 w-2 h-2 bg-pink-400 rounded-full animate-pulse delay-300"></div>
-        
-        {/* Grid pattern overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,255,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
-        
-        {/* Gradient orbs */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-cyan-500/10 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-purple-500/10 to-transparent rounded-full blur-3xl"></div>
-      </div>
+      {/* Background elements */}
+      
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-black/40 backdrop-blur-md border-b border-cyan-500/20 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -101,49 +88,6 @@ export default function Home() {
               Software Engineer with 14+ years of experience, including 4+ years specializing in DeFi and smart contract development. 
               Building the future of decentralized finance with AI-powered protocols.
             </p>
-          </div>
-          
-          {/* Contact Info */}
-          <div className="flex flex-wrap justify-center gap-6 mb-12">
-            <a href="mailto:maxiperezc@gmail.com" className="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors group">
-              <Mail className="w-5 h-5 group-hover:animate-pulse" />
-              maxiperezc@gmail.com
-            </a>
-            <a 
-              href="https://app.ens.domains/maxcoto.eth" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors group"
-            >
-              <div className="w-5 h-5 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full flex items-center justify-center">
-                <div className="w-2 h-2 bg-black rounded-full"></div>
-              </div>
-              maxcoto.eth
-            </a>
-            <div className="flex items-center gap-2 text-gray-300">
-              <MapPin className="w-5 h-5" />
-              Buenos Aires, Argentina
-            </div>
-          </div>
-
-          {/* Social Links */}
-          <div className="flex justify-center gap-6">
-            <a 
-              href="https://linkedin.com/in/maxiperezc" 
-            target="_blank"
-            rel="noopener noreferrer"
-              className="p-3 bg-cyan-500/10 rounded-full hover:bg-cyan-500/20 transition-colors border border-cyan-500/20 hover:border-cyan-500/40 group"
-            >
-              <Linkedin className="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform" />
-          </a>
-          <a
-              href="https://github.com/maxcoto" 
-            target="_blank"
-            rel="noopener noreferrer"
-              className="p-3 bg-cyan-500/10 rounded-full hover:bg-cyan-500/20 transition-colors border border-cyan-500/20 hover:border-cyan-500/40 group"
-            >
-              <Github className="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform" />
-            </a>
           </div>
         </div>
       </section>
@@ -465,7 +409,7 @@ export default function Home() {
           <p className="text-xl text-gray-300 mb-12">
             I&apos;m always interested in discussing new opportunities, collaborations, and innovative DeFi projects.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <a 
               href="mailto:maxiperezc@gmail.com"
               className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
@@ -482,6 +426,34 @@ export default function Home() {
               <Linkedin className="w-5 h-5" />
               Connect on LinkedIn
             </a>
+            <a 
+              href="https://github.com/maxcoto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
+            >
+              <Github className="w-5 h-5" />
+              View GitHub
+            </a>
+          </div>
+
+          {/* Additional Contact Info */}
+          <div className="flex flex-wrap justify-center gap-8">
+            <a 
+              href="https://app.ens.domains/maxcoto.eth" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors group"
+            >
+              <div className="w-5 h-5 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full flex items-center justify-center">
+                <div className="w-2 h-2 bg-black rounded-full"></div>
+              </div>
+              maxcoto.eth
+            </a>
+            <div className="flex items-center gap-2 text-gray-300">
+              <MapPin className="w-5 h-5" />
+              Buenos Aires, Argentina
+            </div>
           </div>
         </div>
       </section>
