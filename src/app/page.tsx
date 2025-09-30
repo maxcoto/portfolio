@@ -9,7 +9,8 @@ import {
   Shield,
   Zap,
   Brain,
-  Award
+  Award,
+  Calendar
 } from "lucide-react";
 
 export default function Home() {
@@ -145,13 +146,18 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* StakB */}
-            <div className="bg-white/10 rounded-lg p-6 hover:bg-white/15 transition-colors">
-              <div className="w-full h-48 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg mb-4 flex items-center justify-center">
-                <div className="text-center">
-                  <Zap className="w-12 h-12 text-white mx-auto mb-2" />
-                  <p className="text-white font-semibold">StakB</p>
-                  <p className="text-purple-200 text-sm">Project Screenshot</p>
-                </div>
+            <a 
+              href="https://stakb.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
+            >
+              <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src="/projects/stakb.jpg" 
+                  alt="StakB - Bitcoin Yield Vaults" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
@@ -162,29 +168,25 @@ export default function Home() {
                   <p className="text-gray-400 text-sm">Bitcoin Yield Vaults</p>
                 </div>
               </div>
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-300">
                 Designed Bitcoin yield vaults with SWAVA (Smart Wallet Vaults) integrating AI-powered strategies 
                 and cross-chain architecture.
               </p>
-              <a 
-                href="https://stakb.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Visit Project
-              </a>
-            </div>
+            </a>
 
             {/* Vibestation */}
-            <div className="bg-white/10 rounded-lg p-6 hover:bg-white/15 transition-colors">
-              <div className="w-full h-48 bg-gradient-to-br from-pink-500 to-pink-700 rounded-lg mb-4 flex items-center justify-center">
-                <div className="text-center">
-                  <Brain className="w-12 h-12 text-white mx-auto mb-2" />
-                  <p className="text-white font-semibold">Vibestation</p>
-                  <p className="text-pink-200 text-sm">Project Screenshot</p>
-                </div>
+            <a 
+              href="https://aiscan.build" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
+            >
+              <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src="/projects/vibestation.jpg" 
+                  alt="Vibestation - AI-Powered DeFi UI" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-pink-500 rounded-lg flex items-center justify-center">
@@ -195,29 +197,25 @@ export default function Home() {
                   <p className="text-gray-400 text-sm">AI-Powered DeFi UI</p>
                 </div>
               </div>
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-300">
                 Built AI-powered DeFi UI enabling natural-language &quot;vibe trading&quot; across Uniswap/LiFi with 
                 EVM-MCP integration.
               </p>
-              <a 
-                href="https://vibe.aiscan.build" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Visit Project
-              </a>
-            </div>
+            </a>
 
             {/* DagSwap */}
-            <div className="bg-white/10 rounded-lg p-6 hover:bg-white/15 transition-colors">
-              <div className="w-full h-48 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg mb-4 flex items-center justify-center">
-                <div className="text-center">
-                  <Code className="w-12 h-12 text-white mx-auto mb-2" />
-                  <p className="text-white font-semibold">DagSwap</p>
-                  <p className="text-blue-200 text-sm">Project Screenshot</p>
-                </div>
+            <a 
+              href="https://dag-swap.vercel.app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
+            >
+              <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src="/projects/dagswap.jpg" 
+                  alt="DagSwap - Uniswap v4 Fork" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
@@ -228,28 +226,24 @@ export default function Home() {
                   <p className="text-gray-400 text-sm">Uniswap v4 Fork</p>
                 </div>
               </div>
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-300">
                 Developed Uniswap v4 fork for BlockDAG chain with custom liquidity hooks and advanced trading features.
               </p>
-              <a 
-                href="https://maxswap.vercel.app" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Visit Project
-              </a>
-            </div>
+            </a>
 
             {/* Taiser */}
-            <div className="bg-white/10 rounded-lg p-6 hover:bg-white/15 transition-colors">
-              <div className="w-full h-48 bg-gradient-to-br from-green-500 to-green-700 rounded-lg mb-4 flex items-center justify-center">
-                <div className="text-center">
-                  <Award className="w-12 h-12 text-white mx-auto mb-2" />
-                  <p className="text-white font-semibold">Taiser</p>
-                  <p className="text-green-200 text-sm">Project Screenshot</p>
-                </div>
+            <a 
+              href="https://taiser.ai" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
+            >
+              <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src="/projects/taiser.jpg" 
+                  alt="Taiser - Funding Protocol" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
@@ -260,29 +254,25 @@ export default function Home() {
                   <p className="text-gray-400 text-sm">Funding Protocol</p>
                 </div>
               </div>
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-300">
                 Created funding protocol for VC deals from tweets, leveraging custom bonding curves and 
                 closing strategies.
               </p>
-              <a 
-                href="https://taiser.ai" 
-          target="_blank"
-          rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Visit Project
-              </a>
-            </div>
+            </a>
 
             {/* Sweep */}
-            <div className="bg-white/10 rounded-lg p-6 hover:bg-white/15 transition-colors">
-              <div className="w-full h-48 bg-gradient-to-br from-orange-500 to-orange-700 rounded-lg mb-4 flex items-center justify-center">
-                <div className="text-center">
-                  <Shield className="w-12 h-12 text-white mx-auto mb-2" />
-                  <p className="text-white font-semibold">Sweep</p>
-                  <p className="text-orange-200 text-sm">Project Screenshot</p>
-                </div>
+            <a 
+              href="https://sweepr.finance" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
+            >
+              <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src="/projects/sweep.jpg" 
+                  alt="Sweep - Lending Protocol" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
@@ -293,29 +283,25 @@ export default function Home() {
                   <p className="text-gray-400 text-sm">Lending Protocol</p>
                 </div>
               </div>
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-300">
                 Built lending protocol with junior/senior tranches and cross-chain OFT integration (LayerZero). 
                 Collaborated in 2 external audits.
               </p>
-              <a 
-                href="https://sweepr.finance" 
-          target="_blank"
-          rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" />
-                Visit Project
-              </a>
-            </div>
+            </a>
 
             {/* Slither-UI */}
-            <div className="bg-white/10 rounded-lg p-6 hover:bg-white/15 transition-colors">
-              <div className="w-full h-48 bg-gradient-to-br from-red-500 to-red-700 rounded-lg mb-4 flex items-center justify-center">
-                <div className="text-center">
-                  <Shield className="w-12 h-12 text-white mx-auto mb-2" />
-                  <p className="text-white font-semibold">Slither-UI</p>
-                  <p className="text-red-200 text-sm">Project Screenshot</p>
-                </div>
+            <a 
+              href="https://readstorage.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
+            >
+              <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src="/projects/slither.jpg" 
+                  alt="Slither-UI - Security Tool" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center">
@@ -326,20 +312,11 @@ export default function Home() {
                   <p className="text-gray-400 text-sm">Security Tool</p>
                 </div>
               </div>
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-300">
                 Implemented front-end for Slither security tool to analyze contract slots across chains. 
                 Open-source contribution to blockchain security.
               </p>
-              <a 
-                href="https://github.com" 
-          target="_blank"
-          rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" />
-                View on GitHub
-              </a>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -405,17 +382,16 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-8">Let&apos;s Build the Future of DeFi Together</h2>
-          <p className="text-xl text-gray-300 mb-12">
-            I&apos;m always interested in discussing new opportunities, collaborations, and innovative DeFi projects.
-          </p>
+          <h2 className="text-4xl font-bold text-white mb-8">Let&apos;s Build the Future of DeFi</h2>
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <a 
-              href="mailto:maxiperezc@gmail.com"
+              href="https://calendly.com/maxiperezc"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
             >
-              <Mail className="w-5 h-5" />
-              Get In Touch
+              <Calendar className="w-5 h-5" />
+              Schedule a Call
             </a>
             <a 
               href="https://linkedin.com/in/maxiperezc"
@@ -450,10 +426,6 @@ export default function Home() {
               </div>
               maxcoto.eth
             </a>
-            <div className="flex items-center gap-2 text-gray-300">
-              <MapPin className="w-5 h-5" />
-              Buenos Aires, Argentina
-            </div>
           </div>
         </div>
       </section>
