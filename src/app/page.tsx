@@ -1,8 +1,8 @@
-import { 
-  Github, 
-  Linkedin, 
-  Mail, 
-  Phone, 
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
   MapPin,
   ExternalLink,
   Code,
@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
       {/* Background elements */}
-      
+
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-black/40 backdrop-blur-md border-b border-cyan-500/20 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,24 +53,19 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
             {/* Profile Picture */}
-            <div className="mb-8 flex justify-center">
+            <div className="flex justify-center mb-8">
               <div className="relative">
-                <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-cyan-400/50 shadow-2xl shadow-cyan-400/20">
-                  <img 
-                    src="/profile.jpeg" 
-                    alt="Max Coto Profile Picture" 
-                    className="w-full h-full object-cover"
-                  />
+                <div
+                  className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 blur-md animate-spin"
+                  style={{animationDuration: '3s'}}
+                >
                 </div>
-                <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 opacity-75 blur-sm animate-spin" style={{animationDuration: '3s'}}></div>
-                <div className="absolute -inset-0.5 rounded-full bg-black"></div>
-                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border border-cyan-400/30">
-                  <img 
-                    src="/profile.jpeg" 
-                    alt="Max Coto Profile Picture" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <div className="absolute inset-0 rounded-full bg-black h-40"></div>
+                <img
+                  src="/profile.jpeg"
+                  alt="Profile"
+                  className="relative z-10 rounded-full object-cover size-40 aspect-square border border-cyan-400/40 shadow-xl shadow-cyan-400/30"
+                />
               </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
@@ -86,7 +81,7 @@ export default function Home() {
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             </div>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
-              Software Engineer with 14+ years of experience, including 4+ years specializing in DeFi and smart contract development. 
+              Software Engineer with 14+ years of experience, including 4+ years specializing in DeFi and smart contract development.
               Building the future of decentralized finance with AI-powered protocols.
             </p>
           </div>
@@ -104,15 +99,15 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              
+
               <p className="text-lg text-gray-300 mb-6">
-                Specialized in building innovative DeFi protocols including vault systems, lending platforms, 
-                and AI-powered trading interfaces. My work focuses on creating secure, efficient, and user-friendly 
+                Specialized in building innovative DeFi protocols including vault systems, lending platforms,
+                and AI-powered trading interfaces. My work focuses on creating secure, efficient, and user-friendly
                 solutions that push the boundaries of decentralized finance.
               </p>
               <p className="text-lg text-gray-300">
-                Currently, I&apos;m leading the development of cutting-edge DeFi protocols at Maxos, where I combine 
-                traditional software engineering principles with blockchain innovation to build the next generation 
+                Currently, I&apos;m leading the development of cutting-edge DeFi protocols at Maxos, where I combine
+                traditional software engineering principles with blockchain innovation to build the next generation
                 of financial infrastructure.
               </p>
             </div>
@@ -144,18 +139,18 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Featured Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
+
             {/* StakB */}
-            <a 
-              href="https://stakb.com" 
-              target="_blank" 
+            <a
+              href="https://stakb.com"
+              target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
             >
               <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
-                <img 
-                  src="/projects/stakb.jpg" 
-                  alt="StakB - Bitcoin Yield Vaults" 
+                <img
+                  src="/projects/stakb.jpg"
+                  alt="StakB - Bitcoin Yield Vaults"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -169,22 +164,22 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300">
-                Designed Bitcoin yield vaults with SWAVA (Smart Wallet Vaults) integrating AI-powered strategies 
+                Designed Bitcoin yield vaults with SWAVA (Smart Wallet Vaults) integrating AI-powered strategies
                 and cross-chain architecture.
               </p>
             </a>
 
             {/* Vibestation */}
-            <a 
-              href="https://aiscan.build" 
-              target="_blank" 
+            <a
+              href="https://aiscan.build"
+              target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
             >
               <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
-                <img 
-                  src="/projects/vibestation.jpg" 
-                  alt="Vibestation - AI-Powered DeFi UI" 
+                <img
+                  src="/projects/vibestation.jpg"
+                  alt="Vibestation - AI-Powered DeFi UI"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -198,22 +193,22 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300">
-                Built AI-powered DeFi UI enabling natural-language &quot;vibe trading&quot; across Uniswap/LiFi with 
+                Built AI-powered DeFi UI enabling natural-language &quot;vibe trading&quot; across Uniswap/LiFi with
                 EVM-MCP integration.
               </p>
             </a>
 
             {/* DagSwap */}
-            <a 
-              href="https://dag-swap.vercel.app" 
-              target="_blank" 
+            <a
+              href="https://dag-swap.vercel.app"
+              target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
             >
               <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
-                <img 
-                  src="/projects/dagswap.jpg" 
-                  alt="DagSwap - Uniswap v4 Fork" 
+                <img
+                  src="/projects/dagswap.jpg"
+                  alt="DagSwap - Uniswap v4 Fork"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -232,16 +227,16 @@ export default function Home() {
             </a>
 
             {/* Taiser */}
-            <a 
-              href="https://taiser.ai" 
+            <a
+              href="https://taiser.ai"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
             >
               <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
-                <img 
-                  src="/projects/taiser.jpg" 
-                  alt="Taiser - Funding Protocol" 
+                <img
+                  src="/projects/taiser.jpg"
+                  alt="Taiser - Funding Protocol"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -255,22 +250,22 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300">
-                Created funding protocol for VC deals from tweets, leveraging custom bonding curves and 
+                Created funding protocol for VC deals from tweets, leveraging custom bonding curves and
                 closing strategies.
               </p>
             </a>
 
             {/* Sweep */}
-            <a 
-              href="https://sweepr.finance" 
+            <a
+              href="https://sweepr.finance"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
             >
               <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
-                <img 
-                  src="/projects/sweep.jpg" 
-                  alt="Sweep - Lending Protocol" 
+                <img
+                  src="/projects/sweep.jpg"
+                  alt="Sweep - Lending Protocol"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -284,22 +279,22 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300">
-                Built lending protocol with junior/senior tranches and cross-chain OFT integration (LayerZero). 
+                Built lending protocol with junior/senior tranches and cross-chain OFT integration (LayerZero).
                 Collaborated in 2 external audits.
               </p>
             </a>
 
             {/* Slither-UI */}
-            <a 
+            <a
               href="https://readstorage.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
             >
               <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
-                <img 
-                  src="/projects/slither.jpg" 
-                  alt="Slither-UI - Security Tool" 
+                <img
+                  src="/projects/slither.jpg"
+                  alt="Slither-UI - Security Tool"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -313,7 +308,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-300">
-                Implemented front-end for Slither security tool to analyze contract slots across chains. 
+                Implemented front-end for Slither security tool to analyze contract slots across chains.
                 Open-source contribution to blockchain security.
               </p>
             </a>
@@ -326,7 +321,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Technical Skills</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            
+
             <div className="bg-white/10 rounded-lg p-6">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                 <Code className="w-5 h-5 text-purple-400" />
@@ -384,7 +379,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-8">Let&apos;s Build the Future of DeFi</h2>
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-            <a 
+            <a
               href="https://calendly.com/maxiperezc"
               target="_blank"
               rel="noopener noreferrer"
@@ -393,7 +388,7 @@ export default function Home() {
               <Calendar className="w-5 h-5" />
               Schedule a Call
             </a>
-            <a 
+            <a
               href="https://linkedin.com/in/maxiperezc"
               target="_blank"
               rel="noopener noreferrer"
@@ -402,7 +397,7 @@ export default function Home() {
               <Linkedin className="w-5 h-5" />
               Connect on LinkedIn
             </a>
-            <a 
+            <a
               href="https://github.com/maxcoto"
               target="_blank"
               rel="noopener noreferrer"
@@ -415,9 +410,9 @@ export default function Home() {
 
           {/* Additional Contact Info */}
           <div className="flex flex-wrap justify-center gap-8">
-            <a 
-              href="https://app.ens.domains/maxcoto.eth" 
-              target="_blank" 
+            <a
+              href="https://app.ens.domains/maxcoto.eth"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors group"
             >
