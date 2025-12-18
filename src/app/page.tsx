@@ -142,15 +142,15 @@ export default function Home() {
 
             {/* StakB */}
             <a
-              href="https://stakb.com"
+              href="https://app.stak.fund"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 rounded-lg p-6 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer block"
             >
               <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
                 <img
-                  src="/projects/stakb.jpg"
-                  alt="StakB - Bitcoin Yield Vaults"
+                  src="/projects/stak.jpg"
+                  alt="Stak - Launchpad for DATs, SPACs, and ICOs"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -159,13 +159,12 @@ export default function Home() {
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white">StakB</h3>
-                  <p className="text-gray-400 text-sm">Bitcoin Yield Vaults</p>
+                  <h3 className="text-xl font-bold text-white">Stak</h3>
+                  <p className="text-gray-400 text-sm">Launchpad for DATs, SPACs, and ICOs</p>
                 </div>
               </div>
               <p className="text-gray-300">
-                Designed Bitcoin yield vaults with SWAVA (Smart Wallet Vaults) integrating AI-powered strategies
-                and cross-chain architecture.
+                Designed a launchpad for DATs, SPACs, and ICOs with a focus on security and compliance.
               </p>
             </a>
 
