@@ -10,7 +10,12 @@ import {
   Zap,
   Brain,
   Award,
-  Calendar
+  Calendar,
+  FileSearch,
+  Plug,
+  FolderCog,
+  ShieldCheck,
+  Server
 } from "lucide-react";
 
 export default function Home() {
@@ -27,8 +32,8 @@ export default function Home() {
               <span className="text-sm text-cyan-400 font-mono hidden sm:inline">maxcoto.eth</span>
             </div>
             <div className="hidden md:flex space-x-8">
-              <a href="#about" className="text-gray-300 hover:text-cyan-400 transition-colors relative group">
-                About
+              <a href="#services" className="text-gray-300 hover:text-cyan-400 transition-colors relative group">
+                Services
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full"></span>
               </a>
               <a href="#projects" className="text-gray-300 hover:text-cyan-400 transition-colors relative group">
@@ -81,63 +86,111 @@ export default function Home() {
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             </div>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
-              Software Engineer with 14+ years of experience, including 4+ years specializing in DeFi and smart contract development.
-              Building the future of decentralized finance with AI-powered protocols.
+              Senior Solidity & DeFi engineer (4+ yrs) available for short-term contracts. I help teams prepare for audits, integrate DeFi protocols, and harden smart contracts (access control, limits, safety). Also build bots/indexers and backend infra for Web3 apps. Fast turnaround, production mindset.
             </p>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 to-purple-500/5"></div>
+      {/* Services Section */}
+      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-cyan-500/5"></div>
         <div className="max-w-6xl mx-auto relative">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">
             <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-              About Me
+              Services
             </span>
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-
-              <p className="text-lg text-gray-300 mb-6">
-                Specialized in building innovative DeFi protocols including vault systems, lending platforms,
-                and AI-powered trading interfaces. My work focuses on creating secure, efficient, and user-friendly
-                solutions that push the boundaries of decentralized finance.
-              </p>
-              <p className="text-lg text-gray-300">
-                Currently, I&apos;m leading the development of cutting-edge DeFi protocols at Maxos, where I combine
-                traditional software engineering principles with blockchain innovation to build the next generation
-                of financial infrastructure.
-              </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Offer 1 */}
+            <div className="bg-white/5 rounded-lg p-6 border border-cyan-500/20 hover:border-green-500/40 transition-colors group">
+              <div className="flex items-start gap-4">
+                <span className="text-green-400 text-xl">🟢</span>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                    <FileSearch className="w-5 h-5 text-cyan-400" />
+                    Smart Contract Review
+                  </h3>
+                  <p className="text-gray-300 mb-3">
+                    I review your contracts before audit and fix high/medium issues.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 rounded-lg p-6 text-center border border-cyan-500/20 hover:border-cyan-500/40 transition-colors group">
-                <div className="text-3xl font-bold text-cyan-400 mb-2 group-hover:animate-pulse">14+</div>
-                <div className="text-gray-300">Years Experience</div>
+
+            {/* Offer 2 */}
+            <div className="bg-white/5 rounded-lg p-6 border border-cyan-500/20 hover:border-green-500/40 transition-colors group">
+              <div className="flex items-start gap-4">
+                <span className="text-green-400 text-xl">🟢</span>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                    <Plug className="w-5 h-5 text-cyan-400" />
+                    Protocol Integration
+                  </h3>
+                  <p className="text-gray-300 mb-3">
+                    Need to integrate Chainlink / Uniswap / Morpho / vault logic?
+                  </p>
+                </div>
               </div>
-              <div className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 rounded-lg p-6 text-center border border-cyan-500/20 hover:border-cyan-500/40 transition-colors group">
-                <div className="text-3xl font-bold text-cyan-400 mb-2 group-hover:animate-pulse">4+</div>
-                <div className="text-gray-300">DeFi Specialization</div>
+            </div>
+
+            {/* Offer 3 */}
+            <div className="bg-white/5 rounded-lg p-6 border border-cyan-500/20 hover:border-green-500/40 transition-colors group">
+              <div className="flex items-start gap-4">
+                <span className="text-green-400 text-xl">🟢</span>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                    <FolderCog className="w-5 h-5 text-cyan-400" />
+                    Foundry Project Setup
+                  </h3>
+                  <p className="text-gray-300 mb-3">
+                    I turn your messy repo into a proper testable Foundry project.
+                  </p>
+                </div>
               </div>
-              <div className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 rounded-lg p-6 text-center border border-cyan-500/20 hover:border-cyan-500/40 transition-colors group">
-                <div className="text-3xl font-bold text-cyan-400 mb-2 group-hover:animate-pulse">10+</div>
-                <div className="text-gray-300">DeFi Projects</div>
+            </div>
+
+            {/* Offer 4 */}
+            <div className="bg-white/5 rounded-lg p-6 border border-cyan-500/20 hover:border-green-500/40 transition-colors group">
+              <div className="flex items-start gap-4">
+                <span className="text-green-400 text-xl">🟢</span>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                    <ShieldCheck className="w-5 h-5 text-cyan-400" />
+                    Security Hardening
+                  </h3>
+                  <p className="text-gray-300 mb-3">
+                    Access control, pausing, limits, liquidation safety.
+                  </p>
+                </div>
               </div>
-              <div className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 rounded-lg p-6 text-center border border-cyan-500/20 hover:border-cyan-500/40 transition-colors group">
-                <div className="text-3xl font-bold text-cyan-400 mb-2 group-hover:animate-pulse">2+</div>
-                <div className="text-gray-300">Security Audits</div>
+            </div>
+
+            {/* Offer 5 */}
+            <div className="bg-white/5 rounded-lg p-6 border border-cyan-500/20 hover:border-green-500/40 transition-colors group">
+              <div className="flex items-start gap-4">
+                <span className="text-green-400 text-xl">🟢</span>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                    <Server className="w-5 h-5 text-cyan-400" />
+                    Backend / Web3 Infra
+                  </h3>
+                  <p className="text-gray-300 mb-3">
+                    Indexers, bots, event listeners, execution scripts
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">
+            <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Featured Projects</span>
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {/* StakB */}
@@ -318,7 +371,9 @@ export default function Home() {
       {/* Skills Section */}
       <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">Technical Skills</h2>
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">
+            <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Technical Skills</span>
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
             <div className="bg-white/10 rounded-lg p-6">
@@ -376,7 +431,9 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-8">Let&apos;s Build the Future of DeFi</h2>
+          <h2 className="text-4xl font-bold text-white mb-8">
+            <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Let&apos;s Build the Future of DeFi</span>
+          </h2>
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <a
               href="https://calendly.com/maxiperezc"
@@ -428,7 +485,7 @@ export default function Home() {
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-white/10">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-400">
-            © 2025 Max Coto. Building the future of decentralized finance.
+            © 2026 Max Coto. Building the future of decentralized finance.
           </p>
         </div>
       </footer>
